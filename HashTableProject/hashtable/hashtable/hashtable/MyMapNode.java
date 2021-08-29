@@ -1,10 +1,13 @@
 package hashtable;
+
 import linkedlist.INode;
+
 public class MyMapNode<K, V>implements INode<K> {
 	
 	K key;
 	V value;
 	MyMapNode<K, V> next;
+	
 	public MyMapNode(K key, V value) {
 		this.key = key;
 		this.value = value;
@@ -33,8 +36,9 @@ public class MyMapNode<K, V>implements INode<K> {
 	}
 	@Override
 	public void setNext(INode<K> next) {
-		this.next = (MyMapNode<K, V>) next;		
-	}	
+		this.next = (MyMapNode<K, V>) next;
+			
+	}
 	public String toString() {
 		
 		StringBuilder myMapNodeString = new StringBuilder();
